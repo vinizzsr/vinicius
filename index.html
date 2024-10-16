@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Biblioteca de Imagens Elegante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4f4f4f;
+            color: #333;
+        }
+
+        header {
+            background-color: #b31ec6;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+
+        .gallery-item:hover .caption {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca do Vini</h1>
+        <p>Uma coleção visual impressionante para você explorar</p>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZVZwWt1E3Mh9h1tGX8n7PRGGEaKD84Mbjw&s/600" alt="Imagem 1">
+                <div class="caption"> Joseph Jacobs
+                    - Os Três Porquinhos </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_it_c67mgHkNBqJ_XfC3Pp9QD5Woq8LWjQ&s/600" alt="Imagem 2">
+                <div class="caption"> Antoine de Saint-Exupéry - O Pequeno Príncipe</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopKqimTV2LE_UzLyLje8cATo64aTih6MLRg&s/600" alt="Imagem 3">
+                <div class="caption"> Jim Benton
+                    - Querido diário Otário</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_qnzPG6a-Uo4Q6BBpilZKp5rCb6QS2UY8w&s/600" alt="Imagem 4">
+                <div class="caption"> Jeff Kinney
+                    - Diário de um Banana</div>
+            </div>
+            <div class="gallery-item">
+                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvj7QlW88RYagEaQHIBN1N9vbgQ-H8xNM0Og&s/600" alt="Imagem 5">
+                <div class="caption"> CARLTON, HD
+                    - Assombrando Adeline</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://rihappy.vtexassets.com/arquivos/ids/2481233-800-auto?v=637800279489230000&width=800&height=auto&aspect=true/600" alt="Imagem 6">
+                <div class="caption">Mauricio de Sousa
+                    - Turma da Monica Jovem</div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>com
